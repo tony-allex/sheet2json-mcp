@@ -1,0 +1,7 @@
+Tidspunkt;Sensor ID;Type;Værdi;Enhed;Lokation
+13-11-2026 08:00;TS-101;temperature;72,5;°C;Substation A
+13-11-2026 08:00;PS-201;pressure;6,1;bar;Substation A
+13-11-2026 08:00;FS-301;flow;12,8;m3/h;Substation A
+13-11-2026 08:15;TS-101;Temperature;72,9;°C;Substation A
+13-11-2026 08:15;TS-102;temperature;n/a;°C;Substation B
+13-11-2026 08:15;PS-201;pressure;6,0;psi;Substation A

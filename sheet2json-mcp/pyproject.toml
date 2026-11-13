@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheet2json-mcp"
+version = "0.1.0"
+description = "An MCP server that lets AI agents turn messy spreadsheets into validated JSON, on rails."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Alexandru Tronaru" }]
+dependencies = [
+    "mcp>=2.3,<3",
+    "openpyxl>=3.1",
+    "jsonschema>=4.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "anyio>=4"]
+
+[project.scripts]
+sheet2json-mcp = "sheet2json.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sheet2json = ["schemas/*.schema.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
